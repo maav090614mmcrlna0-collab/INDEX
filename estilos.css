@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 30px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para tarjetas/secciones del formulario */
+.columna {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Campos de entrada generales */
+input[type="text"], input[type="number"], input[type="tel"], select {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botón estilo aceptado / registrado */
+.btn-verde {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.btn-verde:hover {
+    background-color: #45a049;
+}
+
+/* Botón estilo navegación / enlaces */
+.btn-azul {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn-azul:hover {
+    background-color: #007399;
+}
+
+/* ==========================================
+   SECCIÓN HORA Y CALENDARIO (NUEVA)
+   ========================================== */
+
+/* Contenedor del campo de hora */
+.caja-hora {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caja-hora label {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Selector tipo input time */
+input[type="time"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    color: #008CBA;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+/* Calendario en Cuadritos (Tabla) */
+.tabla-calendario {
+    width: 100%;
+    border-spacing: 6px; /* Separa los cuadritos */
+    border-collapse: separate;
+    margin-bottom: 10px;
+}
+
+.tabla-calendario th {
+    color: #555;
+    font-size: 14px;
+    padding-bottom: 6px;
+    font-weight: bold;
+}
+
+/* Cuadritos del calendario */
+.tabla-calendario td {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Hover al pasar el ratón */
+.tabla-calendario td:hover {
+    background-color: #e0f2fe;
+    border-color: #008CBA;
+}
+
+/* Día seleccionado con color del tema */
+.tabla-calendario td.dia-seleccionado {
+    background-color: #008CBA;
+    color: white;
+    font-weight: bold;
+    border-color: #007399;
+}
